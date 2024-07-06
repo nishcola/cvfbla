@@ -10,10 +10,27 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <style>
+      body {
+          animation: fadeInAnimation ease 3s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+      }
+
+      @keyframes fadeInAnimation {
+          0% {
+              opacity: 0.1;
+          }
+
+          100% {
+              opacity: 1;
+          }
+      }
+  </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-sm">
-      <div class="container">
+      <div class="container mt-2">
         <a class="navbar-brand" href="#">
           <img
             src="https://www.fbla.org/media/2022/09/FBLA_HorizontalLogo_cropped-01.png"
@@ -21,6 +38,33 @@
             style="width: 250px"
           />
         </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="btn btn-primary active dropdown-toggle nav-link" style="margin-left: 10px"href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Divisions
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">High School</a></li>
+                <li><a class="dropdown-item" href="#">Middle School Virtual Chapter</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="btn btn-primary active dropdown-toggle nav-link" style="margin-left: 10px"href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Preparation Resources
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Objective Tests</a></li>
+                <li><a class="dropdown-item" href="#">Presentation/Roleplay Events</a></li>
+                <li><a class="dropdown-item" href="#">Guides/Important Dates</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link active" style="margin-left: 10px">Info/Contact</a></li>
+        </ul>
         <!-- Custom Search Form -->
         <form id="search-form" class="d-flex" role="search">
           <input id="query" class="form-control me-2" type="search" placeholder="Search FBLA" aria-label="Search FBLA">
