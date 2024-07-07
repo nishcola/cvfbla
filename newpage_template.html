@@ -27,10 +27,32 @@
               opacity: 1;
           }
       }
+
+      .navbar-nav .nav-item + .nav-item {
+        margin-left: 10px;
+      }
+
+      @media (max-width: 1200px) {
+        .navbar-nav {
+          flex-direction: column;
+          align-items: center;
+        }
+        .navbar-nav .nav-item + .nav-item {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+        #search-form {
+          margin-top: 10px; /* Add spacing above the search form */
+          padding-bottom: 5px;
+        }
+        #home-button {
+          margin-top: 5px;
+        }
+      }
   </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm">
+    <nav class="navbar navbar-expand-xl">
       <div class="container mt-2">
         <a class="navbar-brand" href="#">
           <img
@@ -39,38 +61,93 @@
             style="width: 250px"
           />
         </a>
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="index.html" class="btn btn-primary" aria-current="page">Home</a></li>
-          <li class="nav-item">
-            <div class="dropdown">
-              <a class="btn btn-outline-primary dropdown-toggle" style="margin-left: 10px"href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Divisions
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">High School Competitive Events</a></li>
-                <li><a class="dropdown-item" href="#">Middle School Virtual Chapter</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <div class="dropdown">
-              <a class="btn btn-outline-primary dropdown-toggle" style="margin-left: 10px"href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Preparation Resources
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Objective Tests</a></li>
-                <li><a class="dropdown-item" href="#">Presentation/Roleplay Events</a></li>
-                <li><a class="dropdown-item" href="#">Guides/Important Dates</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item"><a href="#" class="btn btn-outline-primary" style="margin-left: 10px">Info/Contact</a></li>
-        </ul>
-        <!-- Custom Search Form -->
-        <form id="search-form" class="d-flex" role="search">
-          <input id="query" class="form-control me-2" type="search" placeholder="Search FBLA" aria-label="Search FBLA">
-          <button class="btn btn-success" type="submit">Search</button>
-        </form>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto nav-pills">
+            <li class="nav-item">
+              <a
+                href="index.html"
+                class="btn btn-primary"
+                aria-current="page"
+                id="home-button"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="btn btn-outline-primary dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Divisions
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="hs_events.html"
+                      >High School Competitive Events</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="ms_virtual_chapter.html"
+                      >Middle School Virtual Chapter</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="btn btn-outline-primary dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Preparation Resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Objective Tests</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Presentation/Roleplay Events</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Guides/Important Dates</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn btn-outline-primary">Info/Contact</a>
+            </li>
+          </ul>
+          <!-- Custom Search Form -->
+          <form id="search-form" class="d-flex ms-3" role="search">
+            <input
+              id="query"
+              class="form-control me-2"
+              type="search"
+              placeholder="Search FBLA"
+              aria-label="Search FBLA"
+            />
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
       </div>
     </nav>
     <!-- Google Custom Search Element Script -->
