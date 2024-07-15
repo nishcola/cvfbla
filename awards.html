@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cumberland Valley FBLA</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="https://www.fbla.org/media/2022/07/FBLA-Crest-FINAL-RGB-01-e1658431231682-300x300.png">
+    <style>
+      body {
+          animation: fadeInAnimation ease 2s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+      }
+
+      @keyframes fadeInAnimation {
+          0% {
+              opacity: 0.1;
+          }
+
+          100% {
+              opacity: 1;
+          }
+      }
+
+      .navbar-nav .nav-item + .nav-item {
+        margin-left: 10px;
+      }
+
+      @media (max-width: 1200px) {
+        .navbar-nav {
+          flex-direction: column;
+          align-items: center;
+        }
+        .navbar-nav .nav-item + .nav-item {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+        #search-form {
+          margin-top: 10px; /* Add spacing above the search form */
+          padding-bottom: 5px;
+        }
+        #home-button {
+          margin-top: 5px;
+        }
+      }
+  </style>
+  </head>
+  <body style="background-color: #e4eaf5;">
+    <nav class="navbar navbar-expand-xl sticky-top" style="background-color: #f3f6fc; padding-bottom: 15px;">
+        <div class="container mt-2">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="https://www.fbla.org/media/2022/09/FBLA_HorizontalLogo_cropped-01.png"
+              alt="Logo"
+              style="width: 250px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto nav-pills">
+              <li class="nav-item">
+                <a
+                  href="index.html"
+                  class="btn btn-primary"
+                  aria-current="page"
+                  id="home-button"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a
+                    class="btn btn-outline-primary dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Divisions
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="hs_events.html"
+                        >High School Competitive Events</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="ms_virtual_chapter.html"
+                        >Middle School Virtual Chapter</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="awards.html">Award Winners</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a
+                    class="btn btn-outline-primary dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Resources
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="objective_tests.html">Objective Tests</a></li>
+                    <li>
+                      <a class="dropdown-item" href="presentation_events.html"
+                        >Presentation/Roleplay Events</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="timeline.html">Timeline</a>
+                    </li>
+                    <li>
+                      <a href="guides.html" class="dropdown-item">Guides</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="btn btn-outline-primary">Contact</a>
+              </li>
+            </ul>
+            <!-- Custom Search Form -->
+            <form id="search-form" class="d-flex ms-3" role="search">
+              <input
+                id="query"
+                class="form-control me-2"
+                type="search"
+                placeholder="Search FBLA"
+                aria-label="Search FBLA"
+              />
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container mt-3">
+        <h1>Award Winners</h1>
+        <p>Archive of current and previous award winners.</p>
+        <div class="alert alert-success">
+            Congrats to all award winners!
+        </div>
+        <h2>2024 National Leadership Conference Placings</h2>
+        <ul>
+            <li>Ram Makki - 1st - Introduction to Business Procedures</li>
+            <li>Nishanth Kolla - 3rd - Introduction to Information Technology</li>
+            <li>Sricharan Addagatla - 4th - Cybersecurity</li>
+            <li>Ronav Bagkar - 5th - Business Etiquette</li>
+            <li>Ryan Coughlin - 6th - Introduction to Event Planning</li>
+            <li>Amogh Avadhani - 8th - Introduction to Business Procedures</li>
+        </ul>
+        <h2>2024 State Leadership Conference Placings</h2>
+        <ul>
+            <li>Aveer Bawa & Maanukh Chadha - 1st - Introduction to Programming</li>
+            <li>Nishanth Kolla - 1st - Introduction to Information Technology</li>
+            <li>Ram Makki - 1st - Introduction to Business Procedures</li>
+            <li>Ameya Panchal - 1st - Website Coding & Development</li>
+            <li>Chinmay Govind - 2nd - Cybersecurity</li>
+            <li>Nihar Bagkar - 2nd - Business Law</li>
+            <li>Nihar Bagkar, Suhaas Lakunde, & Andon Vonstein - 2nd - Local Annual Chapter Business Report</li>
+            <li>Stephen Aichele - 2nd - Agribusiness</li>
+            <li>Satvik Joshi, Junhee Lee, & Prajesh Padarthi - 2nd - Introduction to Social Media Strategies</li>
+            <li>Amogh Avadhani - 2nd - Introduction to Business Procedures</li>
+            <li>Ishan Chattopadhyay & Ashwin Subramanian - 2nd - Business Management</li>
+            <li>Saharsh Munugani & Prerak Naik - 3rd - Introduction to Programming</li>
+            <li>Mehul Khattar - 3rd - Introduction to Marketing Concepts</li>
+            <li>Fiyin Orekoya - 3rd - Banking & Financial Systems</li>
+            <li>Ryan Coughlin - 4th - Introduction to Event Planning</li>
+            <li>CV FBLA - 4th - Largest Local Chapter Membership</li>
+            <li>Toshani Rawat & Kanishkaa Rajendran - 5th - Digital Animation</li>
+            <li>Rohan Jawale - 5th - Journalism</li>
+            <li>Sanjitha Chelli - 5th - Introduction to Parliamentary Procedure</li>
+            <li>Katelyn Ford - 5th - Public Policy & Advocacy</li>
+            <li>Keziah James - 5th - Introduction to Public Speaking</li>
+            <li>Sricharan Addagatla - 6th - Cybersecurity</li>
+            <li>Praveen Prabakar - 6th - Introduction to Business Concepts</li>
+            <li>Laghima Pal - 6th - Public Policy & Advocacy</li>
+            <li>Maeve Gleeson & Sai Gadige - 6th - Website Design</li>
+            <li>Laakshitha Mittapalli, Dhruvi Patel, & Aishwarya Siddabathini - 6th - Introduction to Business Presentation</li>
+            <li>Nihar Bagkar - 6th - Who's Who in Pennsylvania FBLA</li>
+            <li>Nihar Bagkar - 6th - William Selden Scholarship Award</li>
+            <li>Laahini Addagatla - 7th - Website Coding & Development</li>
+            <li>Poorvi Parikh - 7th - Website Coding & Development</li>
+            <li>Nishanth Jadav - 7th - Coding & Programming</li>
+            <li>Viraj Singh - 7th - Coding & Programming</li>
+            <li>Ogbannaya Ekezie - 8th - Financial Statement Analysis</li>
+            <li>Shenouda Nessim - 8th - Financial Statement Analysis</li>
+            <li>Natalie Odoom - 8th - Financial Statement Analysis</li>
+            <li>Pranav Behal - 8th - Introduction to Information Technology</li>
+            <li>Jahnavi Kotapati - 9th - Human Resource Management</li>
+            <li>Aryan Patel - 9th - Spreadsheet Applications</li>
+            <li>Deeksha Rajesh - 10th - Introduction to Business Concepts</li>
+            <li>Nandhini Jayendrasankar - 10th - Introduction to Public Speaking</li>
+        </ul>
+        <h2>2024 State Leadership Conference Open Event Placings</h2>
+        <ul>
+            <li>Nishanth Kolla - 1st - Computer Science & Technology</li>
+            <li>Nihar Bagkar - 1st - Financial Services & FinTech</li>
+            <li>Sricharan Addagatla - 1st - Python Programming</li>
+            <li>Chinmay Govind - 2nd - Cloud Computing & Services</li>
+            <li>Amogh Avadhani - 2nd - Financial Services & FinTech</li>
+            <li>Chinmay Govind - 3rd - Data Security</li>
+            <li>Deeksha Rajesh - 4th - Microeconomics</li>
+            <li>Stephen Aichele - 6th - Career Readiness</li>
+            <li>Ram Makki - 6th - Computer Science & Technology</li>
+            <li>Pranav Behal - 6th - Financial Services & FinTech</li>
+            <li>Chinmay Govind - 6th - Python Programming</li>
+            <li>Amogh Avadhani - 7th - Career Readiness</li>
+            <li>Praveen Prabakar - 7th - Microeconomics</li>
+            <li>Nihar Bagkar - 9th - Cloud Computing & Services</li>
+            <li>Stephen Aichele - 9th - Microeconomics</li>
+            <li>Nihar Bagkar - 9th - Stock Market & Investments</li>
+        </ul>
+        <h2>2024 Regional Leadership Conference Placings</h2>  
+        <ul>
+            <li>Accounting I - Lillianne Gardea</li>
+            <li>Advertising - Manoj Manduri</li>
+            <li>AgriBusiness - Stephen Aichele</li>
+            <li>AgriBusiness - Tania Maliackel</li>
+            <li>Banking & Financial Systems - Mofiyinfoluwa Orekoya</li>
+            <li>Banking & Financial Systems - Biplab Khatiwada; Nidhish Radhakrishnan; Aditya Suresh</li>
+            <li>Business Calculations - Tej Emany</li>
+            <li>Business Calculations - Yuvraj Parekh</li>
+            <li>Business Calculations - Arush Talluri</li>
+            <li>Business Communication - Michael Yeh</li>
+            <li>Business Communication - Madelynn Cashman</li>
+            <li>Business Law - Nihar Bagkar</li>
+            <li>Business Law - Leila Lorei</li>
+            <li>Business Management - Ishan Chattopadhyay; Ashwin Subramanian</li>
+            <li>Business Management - Olivya Lindsey; Sienna Manns</li>
+            <li>Computer Problem Solving - Akash Sarode</li>
+            <li>Computer Problem Solving - Sahiti Kulkarni</li>
+            <li>Cyber Security - Chinmay Govind</li>
+            <li>Cyber Security - Sricharan Addagatla</li>
+            <li>Cyber Security - Arnav Andhare</li>
+            <li>Economics - Sahil Barapatre</li>
+            <li>Economics - Jasroop Nanuan</li>
+            <li>Graphic Design - Aadesh Jay Harikumar; Sheel Kalkote</li>
+            <li>Health Care Administration - Arnav Chatrathi</li>
+            <li>Hospitality & Event Management - Sritha Allala; Sruthi Anbalagan</li>
+            <li>Hospitality & Event Management - Noah Shingara</li>
+            <li>Human Resource Management - Jahnavi Kotapati</li>
+            <li>Human Resource Management - Pragya Pariyar</li>
+            <li>Impromptu Speaking - Krish Mittal</li>
+            <li>Insurance & Risk Management - Sydney Statler</li>
+            <li>Insurance & Risk Management - Jake Dussinger</li>
+            <li>Intro to Business Communication - Kavish Patel</li>
+            <li>Intro to Business Communication - Aria Sonalkar</li>
+            <li>Intro to Business Communication - Ankita Kesavan</li>
+            <li>Intro to Business Concepts - Praveen Prabakar</li>
+            <li>Intro to Business Concepts - Deeksha Rajesh</li>
+            <li>Intro to Business Presentation - Laakshitha Mittapalli; Dhruvi Patel; Aishwarya Siddabathini</li>
+            <li>Intro to Business Procedures - Amogh Avadhani</li>
+            <li>Intro to Business Procedures - Ram Makki</li>
+            <li>Intro to Business Procedures - Purvesha Dua</li>
+            <li>Intro to Event Planning - Ryan Coughlin</li>
+            <li>Intro to Event Planning - Katherine Heidelbaugh</li>
+            <li>Intro to FBLA - Sanjana Kota</li>
+            <li>Intro to FBLA - Keya Patel</li>
+            <li>Intro to FBLA - Dhairya Agarwal</li>
+            <li>Intro to Information Tech - Nishanth Kolla</li>
+            <li>Intro to Information Tech - Pranav Behal</li>
+            <li>Intro to Information Tech - Yugandhara Kanade</li>
+            <li>Intro to Marketing Concepts - Hadi Mohammed</li>
+            <li>Intro to Marketing Concepts - Mehul Khattar</li>
+            <li>Intro to Marketing Concepts - Arya Sindiri</li>
+            <li>Intro to Parliamentary Procedure - Sanjitha Chelli</li>
+            <li>Intro to Parliamentary Procedure - Sanjana Muppa</li>
+            <li>Intro to Public Speaking - Nandhini Jayendrasankar</li>
+            <li>Intro to Public Speaking - Keziah James</li>
+            <li>Intro to Social Media Strategy - Satvik Joshi; Junhee Lee; Prajesh Padarthi</li>
+            <li>Intro to Social Media Strategy - Saana Jaluria; Prina Patel</li>
+            <li>Journalism - Rohan Jawale</li>
+            <li>Marketing - Jillian Davis; Ruby Diduszyn</li>
+            <li>Networking Infrastructures - Suhaas Lakunde</li>
+            <li>Networking Infrastructures - Sritham Umashankar</li>
+            <li>Organizational Leadership - Andon Vonstein</li>
+            <li>Organizational Leadership - Pranav Anand</li>
+            <li>Personal Finance - Rohan Kakaria</li>
+            <li>Personal Finance - Anurag Palakurti</li>
+            <li>Public Policy & Advocacy - Laghima Pal</li>
+            <li>Public Policy & Advocacy - Katelyn Ford</li>
+            <li>Public Policy & Advocacy - Kaitlyn Yhun</li>
+            <li>Public Speaking - Rishita Kadre</li>
+            <li>Sales Presentation - Bryce Fox; Jack Rosenstein; Nathan Vizelman</li>
+            <li>Securities & Investments - Ritvik Kolli</li>
+            <li>Sports & Entertainment Mgmt. - Jayita Chittor</li>
+            <li>Sports & Entertainment Mgmt. - Mokshagna Abburi; Jordan Union</li>
+            <li>Spreadsheet Applications - Aryan Patel</li>
+            <li>Supply Chain Mgmt. - Abdue Raheem Rafeeque</li>
+            <li>Supply Chain Mgmt. - Colleen Turnpaugh</li>
+        </ul>   
+        <h2>2023 State Leadership Conference Placings</h2>
+        <ul>
+            <li>Nihar Bagkar - 1st - Business Law</li>
+            <li>Bhoomika Navandar - 2nd - Health Care Administration</li>
+            <li>Jayita Chittor - 4th - Public Relations</li>
+            <li>Mina Ghani - 4th - Impromptu Speaking</li>
+            <li>Laghima Pal - 5th - Political Science</li>
+            <li>Deeksha Rajesh - 6th - Intro to Marketing Concepts</li>
+            <li>Laahini Addagatla and Poorvi Parikh - 7th - Mobile App Development</li>
+            <li>Sricharan Addagatla - 8th - Computer Applications</li>
+            <li>Justin Shopp - 9th - Journalism</li>
+            <li>Arush Talluri - 10th - Financial Math</li>
+            <li>Aryan Patel - 10th - Spreadsheet Applications</li>
+            <li>Andon Vonstein - 10th - Human Resource Management</li>
+        </ul>
+        <h2>2023 State Leadership Conference Open Event Placings</h2>
+        <ul>
+            <li>Nihar Bagkar - 1st - Financial Literacy</li>
+            <li>Ryan Thomas - 5th - Cloud Computing</li>
+            <li>Sricharan Addagatla - 5th - Python Programming</li>
+            <li>Amogh Avadhani - 6th - Stock Market & Investments</li>
+            <li>Nihar Bagkar - 8th - Macroeconomics</li>
+            <li>Sricharan Addagatla - 8th - Computer Applications</li>
+        </ul>
+        <h2>2023 Regional Leadership Conference Placings</h2>
+        <ul>
+            <li>Aki Ekezie - 1st - Advertising</li>
+            <li>Benjamin Jones - 1st - Agribusiness</li>
+            <li>Manoj Manduri - 1st - Banking & Financial Systems</li>
+            <li>Vikram Kakaria - 1st - Business Calculations</li>
+            <li>Aditi Sanghvi - 1st - Business Communications</li>
+            <li>Nihar Bagkar - 1st - Business Law</li>
+            <li>Sricharan Addagatla - 1st - Computer Applications</li>
+            <li>Chinmay Govind - 1st - Computer Problem Solving</li>
+            <li>Akash Sarode - 1st - Cybersecurity</li>
+            <li>Sahil Barapatre - 1st - Economics</li>
+            <li>Daniel Malinich - 1st - Graphic Design</li>
+            <li>Kaitlyn Yhun - 1st - Hospitality & Event Management</li>
+            <li>Andon Vonstein - 1st - Human Resource Management</li>
+            <li>Yasmina Ghani - 1st - Impromptu Speaking</li>
+            <li>Anika Chandra - 1st - Introduction to Business Communications</li>
+            <li>Grayson Hoy - 1st - Introduction to Business Concepts</li>
+            <li>Amogh Avadhani - 1st - Introduction to Business Presentation</li>
+            <li>Yuvraj Parekh - 1st - Introduction to Business Procedures</li>
+            <li>Zohaib Jilani - 1st - Introduction to FBLA</li>
+            <li>Arush Talluri - 1st - Introduction to Financial Math</li>
+            <li>Aria Sonalkar - 1st - Introduction to Information Technology</li>
+            <li>Deeksha Rajesh - 1st - Introduction to Marketing Concepts</li>
+            <li>Bella McIntire - 1st - Introduction to Social Media Strategy</li>
+            <li>Justin Shopp - 1st - Journalism</li>
+            <li>Ryan Thomas - 1st - Marketing</li>
+            <li>Laghima Pal - 1st - Political Science</li>
+            <li>Rishita Kadre - 1st - Public Speaking</li>
+            <li>Aryan Patel - 1st - Spreadsheet Applications</li>
+            <li>Molly Winner - 1st - Supply Chain Management</li>
+            <li>Jeremy Hou - 1st - Word Processing</li>
+            <li>Vraj Patel - 2nd - Business Calculations</li>
+            <li>Wasi Ullah - 2nd - Business Law</li>
+            <li>Pari Patel - 2nd - Business Management</li>
+            <li>Sharan Thirunavukkarasu - 2nd - Computer Problem Solving</li>
+            <li>Aparna Raghu - 2nd - Cybersecurity</li>
+            <li>Yujie Lu - 2nd - Economics</li>
+            <li>Kathy Tiet - 2nd - Graphic Design</li>
+            <li>Jayita Chittor - 2nd - Health Care Administration</li>
+            <li>Jahnavi Kotapati - 2nd - Hospitality & Event Management</li>
+            <li>Krish Mittal - 2nd - Impromptu Speaking</li>
+            <li>Pranav Anbalagan - 2nd - Introduction to Business Concepts</li>
+            <li>Tej Emany - 2nd - Introduction to Financial Math</li>
+            <li>Sahiti Kulkarni - 2nd - Introduction to Information Technology</li>
+            <li>Siva Shankari Umasankar - 2nd - Introduction to Marketing Concepts</li>
+            <li>Natalie Odoom - 2nd - Introduction to Public Speaking</li>
+            <li>Raahi Patel - 2nd - Marketing</li>
+            <li>Katelyn Ford - 2nd - Political Science</li>
+            <li>Suhaas Lakunde - 3rd - Business Communications</li>
+            <li>Aapathi Kavuri - 3rd - Business Law</li>
+            <li>Swamini Chiplunkar - 3rd - Economics</li>
+            <li>Ruby Diduszyn & Seyram Setuagbe - 3rd - Entrepreneurship</li>
+            <li>Bhoomika Navandar - 3rd - Health Care Administration</li>
+            <li>Noah Burkholder - 3rd - Introduction to Business Concepts</li>
+            <li>Leila Lorei - 3rd - Introduction to Public Speaking</li>
+            <li>Morgan Umphrey - 3rd - Political Science</li>
+            <li>Amaya Ghosh - 4th - Business Communications</li>
+            <li>Avanti Athavale - 4th - Business Calculations</li>
+            <li>Hadassah Herbert - 4th - Health Care Administration</li>
+            <li>Rohan Kakaria - 4th - Introduction to Financial Math</li>
+        </ul>
+        <h2>2022 National Leadership Conference Placings</h2>
+        <ul>
+            <li>Sricharan Aadagatla - 3rd - UX Design</li>
+        </ul>                  
+      </div>
+    <!-- Google Custom Search Element Script -->
+    <script async src="https://cse.google.com/cse.js?cx=72cac8b9284ec4e66"></script>
+    <script>
+      document.getElementById('search-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const query = document.getElementById('query').value;
+        if (query) {
+          window.open(`https://cse.google.com/cse?cx=72cac8b9284ec4e66#gsc.tab=0&gsc.q=${query}`, `_blank`);
+        }
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

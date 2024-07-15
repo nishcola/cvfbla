@@ -58,7 +58,7 @@
       }
 
       .timeline-with-icons {
-        border-left: 1px solid hsl(0, 0%, 90%);
+        border-left: 1px solid hsl(0, 0%, 67%);
         position: relative;
         list-style: none;
       }
@@ -108,110 +108,116 @@
     }
     </style>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-xl">
-        <div class="container mt-2">
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="https://www.fbla.org/media/2022/09/FBLA_HorizontalLogo_cropped-01.png"
-              alt="Logo"
-              style="width: 250px"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto nav-pills">
-              <li class="nav-item">
+  <body style="background-color: #e4eaf5;">
+    <nav class="navbar navbar-expand-xl sticky-top" style="background-color: #f3f6fc; padding-bottom: 15px;">
+      <div class="container mt-2">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="https://www.fbla.org/media/2022/09/FBLA_HorizontalLogo_cropped-01.png"
+            alt="Logo"
+            style="width: 250px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto nav-pills">
+            <li class="nav-item">
+              <a
+                href="index.html"
+                class="btn btn-primary"
+                aria-current="page"
+                id="home-button"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
                 <a
-                  href="index.html"
-                  class="btn btn-primary"
-                  aria-current="page"
-                  id="home-button"
-                  >Home</a
+                  class="btn btn-outline-primary dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-              </li>
-              <li class="nav-item">
-                <div class="dropdown">
-                  <a
-                    class="btn btn-outline-primary dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Divisions
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="hs_events.html"
-                        >High School Competitive Events</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="ms_virtual_chapter.html"
-                        >Middle School Virtual Chapter</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <div class="dropdown">
-                  <a
-                    class="btn btn-outline-primary dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Resources
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="objective_tests.html">Objective Tests</a></li>
-                    <li>
-                      <a class="dropdown-item" href="presentation_events.html"
-                        >Presentation/Roleplay Events</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="timeline.html">Conference Guides/Timeline</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="btn btn-outline-primary">Contact</a>
-              </li>
-            </ul>
-            <!-- Custom Search Form -->
-            <form id="search-form" class="d-flex ms-3" role="search">
-              <input
-                id="query"
-                class="form-control me-2"
-                type="search"
-                placeholder="Search FBLA"
-                aria-label="Search FBLA"
-              />
-              <button class="btn btn-success" type="submit">Search</button>
-            </form>
-          </div>
+                  Divisions
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="hs_events.html"
+                      >High School Competitive Events</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="ms_virtual_chapter.html"
+                      >Middle School Virtual Chapter</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="awards.html">Award Winners</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="btn btn-outline-primary dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="objective_tests.html">Objective Tests</a></li>
+                  <li>
+                    <a class="dropdown-item" href="presentation_events.html"
+                      >Presentation/Roleplay Events</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="timeline.html">Timeline</a>
+                  </li>
+                  <li>
+                    <a href="guides.html" class="dropdown-item">Guides</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="btn btn-outline-primary">Contact</a>
+            </li>
+          </ul>
+          <!-- Custom Search Form -->
+          <form id="search-form" class="d-flex ms-3" role="search">
+            <input
+              id="query"
+              class="form-control me-2"
+              type="search"
+              placeholder="Search FBLA"
+              aria-label="Search FBLA"
+            />
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
         <!-- Section: Timeline -->
-        <div class="container mt-2">
+        <div class="container mt-3">
             <h1>Timeline</h1>
             <hr />
-            <section class="px-5 py-2">
+            <section class="px-5 pt-2">
               <ul class="timeline-with-icons">
                 <li class="timeline-item mb-5">
                   <span class="timeline-icon">
@@ -356,6 +362,7 @@
               </ul>
             </section>
         </div>
+        <!--
     <div class="container mt-2">
         <h1>FBLA Guides</h1>
         <hr>
@@ -371,7 +378,7 @@
             <li><a href="https://pafbla.org">PA FBLA Website</a></li>
             <li><a href="https://fbla.org">National FBLA Website</a></li>
         </ul>
-    </div>
+    </div> -->
     <!-- Google Custom Search Element Script -->
     <script
       async

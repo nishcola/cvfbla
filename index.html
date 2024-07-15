@@ -155,14 +155,39 @@
         #home-button {
           margin-top: 5px;
         }
+        #logo-section {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+        #logo-section-text {
+          text-align: center;
+          margin-top: 5px;
+        }
+        #logo-section-title {
+          margin-bottom: 10px;
+        }
       }
 
       .updates-section {
-        padding: 50px 0;
-        background-color: #f8f9fa;
+        padding: 40px 0;
+        background-color: #e4eaf5;
+      }
+
+      .information-section {
+        padding-top: 50px;
+        background-color: #e4eaf5;
+      }
+
+      body {
+        background-color: #e4eaf5;
       }
 
       .updates-section h2 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .information-section h2 {
         text-align: center;
         margin-bottom: 40px;
       }
@@ -190,10 +215,14 @@
         margin-bottom: 5px;
         display: block;
       }
+
+      #logo-section-title {
+        margin-bottom: 30px;
+      }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-xl">
+    <nav class="navbar navbar-expand-xl sticky-top" style="background-color: #f3f6fc; padding-bottom: 15px;">
       <div class="container mt-2">
         <a class="navbar-brand" href="index.html">
           <img
@@ -246,6 +275,9 @@
                       >Middle School Virtual Chapter</a
                     >
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="awards.html">Award Winners</a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -268,7 +300,10 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="timeline.html">Conference Guides/Timeline</a>
+                    <a class="dropdown-item" href="timeline.html">Timeline</a>
+                  </li>
+                  <li>
+                    <a href="guides.html" class="dropdown-item">Guides</a>
                   </li>
                 </ul>
               </div>
@@ -321,10 +356,38 @@
           class="scroll-text"
           style="font-family: 'Roboto Slab', serif; font-weight: 400"
         >
-          Scroll for updates
+          Scroll for Updates/Info
         </p>
       </div>
     </div>
+    <div class="information-section">
+      <div class="container">
+        <!-- <h2 id="logo-section-title">Who are we?</h2> -->
+        <div class="row">
+          <div class="col-xl-3" id="logo-section">
+            <img src="images/CV Chapter Vertical Logo.png" alt="" width="325" height="auto">
+          </div>
+          <div class="col" id="logo-section-text">
+            <h3>We are the Future Business Leaders of America.</h3>
+            <p>
+              Welcome to Cumberland Valley FBLA's website! Here, you'll find resources you need and more information about our
+              school's chapter. FBLA is national organization in which high school students gain experience through educational programs, 
+              leadership development, and academic competition. In FBLA, you can find an event for nearly every career field, even if you do not want to go into
+              business. With over <strong>60+ events</strong>, you are sure to find something that you or your friends can explore! Our chapter is
+              part of Region 26 of Pennsylvania FBLA, and one of the largest chapters in the state. We have consistently gone to the
+              National Leadership Conference, with the 2024 conference being hosted in Orlando, FL. We have had 7 placements at the National
+              level in recent memory, and one National champion! Be sure to practice and place well in your events, as <strong> the 2025 National Leadership 
+              Conference is being hosted in Los Angeles & Anaheim, California.</strong>
+            </p>
+            <p>
+              Cumberland Valley FBLA is always seeking more membership, so don't feel hesitant to tell your peers about our chapter! Feel free to explore the rest of
+              the website if you want to learn more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr style="margin-top: 40px;">
     <div class="updates-section">
       <div class="container">
         <h2>Latest Updates</h2>
@@ -341,6 +404,9 @@
         </div>
       </div>
     </div>
+    <footer class="footer p-5 text-center" style="background-color: #f3f6fc;">
+      Website Built & Maintained by Nish - &copy; Copyright 2024 Cumberland Valley FBLA.
+    </footer>
     <!-- Google Custom Search Element Script -->
     <script
       async
